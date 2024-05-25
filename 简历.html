@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        header {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .section {
+            margin: 2em 0;
+        }
+        .section h3 {
+            border-bottom: 2px solid #000000;
+            padding-bottom: 0.5em;
+        }
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById('password').value;
+            const correctPassword = '654321';
+            if (password === correctPassword) {
+                document.getElementById('downloadLink').style.display = 'block';
+            } else {
+                alert('密码错误，请重试。');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>个人简历</h1>
+    </header>
+    <div class="container">
+        <div class="profile">
+            <img src="Yue.jpg" alt="你的照片">
+            <h2>岳士博</h2>
+            <p>The University of Edinburgh</p>
+	    <p> Electronics and Computer Science</p>
+        </div>
+        <div class="section">
+            <h3>关于我</h3>
+            <p>
+            	第三年电子与计算机科学本科生，使用Java编程并有三年以上的实践经验，同时利用Python进行算法课程作业，具备面向对象设计的基础和算法与数据结构的实践理解。积极参与协作项目，热衷学习和克服挑战，能够在团队环境中高效贡献。了解基本的算法和数据结构、Java、Python、C语言和MIPS汇编语言基础。性格积极进取，对学习和工作充满热情和投入。期望在六月开始连续三个月的实习，具备高度的责任感和敬业精神。个人兴趣包括中国古典诗歌与文学和徒步旅行，以及通过拍摄视频和照片记录生活、分享体验。渴望从事Java工程师职位。
+            </p>
+        </div>
+        <div class="section">
+            <h3>工作经历</h3>
+            <ul>
+                <li>目前暂无</li>
+                <!-- 添加更多工作经历 -->
+            </ul>
+        </div>
+        <div class="section">
+            <h3>教育背景</h3>
+            <ul>
+                <li>2021~至今 爱丁堡大学 电子与计算机科学 本科学位</li>
+        	<li>相关课程：面向对象编程、算法与数据结构导论、算法与数据结构、信息学大型实践</li>
+        	<li>雅思成绩：6.5</li>
+                <!-- 添加更多教育背景 -->
+            </ul>
+        </div>
+	<div class="section">
+            <h3>项目经历</h3>
+            <ul>
+                <li>
+                    <strong>连四游戏开发项目（Java）</strong> - 主要完成人<br>
+                    起止时间: 2022-12-31 至 2022-02-22<br>
+                    描述: 负责简单基础的游戏的机制设计与实施，通过经验规律总结游戏获胜规则，并根据这些规则进行编程，完成自主下棋功能。
+                </li>
+                <li>
+                    <strong>动物园模拟项目（Java）</strong> - 主要完成人<br>
+                    起止时间: 2022-03-21 至 2022-04-22<br>
+                    描述: 运用编程技能来构建类层次结构，通过合理地设计类与类之间的关系，确保代码的可读性、可维护性和可扩展性，针对项目框架内遇到的各种问题，始终保持谦逊和敬业的态度，深入分析问题，并提出切实可行的解决方案。
+                </li>
+                <li>
+                    <strong>简易TimSort排序与空间优化红黑树（Python）</strong> - 主要完成人<br>
+                    起止时间: 2022-10-28 至 2022-12-02<br>
+                    描述: 用简化的TimSort算法处理排序任务，将MergeSort和InsertSort结合使用，探究三者的联系和优劣之处，同时注意到需要让代码更容易理解和维护；调整红黑树的实现，省略父节点指针，使用栈来追踪路径，去掉了多余的内存使用，让数据结构更加紧凑，为整体空间效率带来重要的优化。
+                </li>
+                <li>
+                    <strong>信息学大型实践项目（Java）</strong> - 主要完成人<br>
+                    起止时间: 2023-09-22 至 2023-12-01<br>
+                    描述: 运用A*算法解决最短路径问题，结合迪杰斯特拉算法与贪心最佳优先搜索原则，使用GeoJson进行空间数据处理，注重项目需求的正式化、算法解决方案的设计以及项目文档的编写。
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <h3>技能</h3>
+            <li>
+		Java、Python、Verilog和Haskell编程语言
+	    </li>
+	    <li>
+		具备算法和数据结构的基础知识
+	    </li>
+	     <li>
+		适应多种数字环境，包括MS Teams和Zoom的使用
+	    </li>		
+        </div>
+        <div class="section">
+            <h3>代码作品展示</h3>
+            <p>
+    		简单介绍代码作品，并提供下载链接。<br>
+    		设计和实现一个Java应用程序，用于模拟无人机配送披萨的服务。通过实现和部署无人机配送系统，熟悉软件工程中的当前技术和方法。设计并实现一个高效的无人机路径规划算法，确保无人机在电池耗尽前完成尽可能多的订单配送。
+	    </p>
+	    <img src="效果示意图.png" alt="作业示意图" style="width: 100%; max-width: 600px;">
+	    <br><br>
+	    <input type="password" id="password" placeholder="输入密码">
+            <button onclick="checkPassword()">提交</button>
+            <div id="downloadLink" style="display:none;">
+                <a href="code.zip" download>下载代码作业</a>
+            </div>
+        </div>
+        <div class="section">
+            <h3>联系我</h3>
+            <p>电子邮件: <a href="mailto:1271461078@qq.com">1271461078@qq.com</a></p>
+            <p>电话: 15851654569</p>
+            <!-- 添加更多联系方式 -->
+        </div>
+        <div class="section">
+            <h3>社交媒体</h3>
+            <p>
+                <a href="https://github.com/Yshiboo">GitHub</a>
+                <!-- 添加更多社交媒体链接 -->
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 岳士博. 保留所有权利.</p>
+    </footer>
+</body>
+</html>
